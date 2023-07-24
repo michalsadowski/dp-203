@@ -12,7 +12,7 @@
 					"referenceName": "KeyVault",
 					"type": "LinkedServiceReference",
 					"parameters": {
-						"suffix": "weslbo"
+						"suffix": "michals"
 					}
 				},
 				"secretName": "sqlPassword"
