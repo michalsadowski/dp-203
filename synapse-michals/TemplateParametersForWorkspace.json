@@ -6,7 +6,7 @@
 			"value": "synapse-michals"
 		},
 		"SqlAdventureWorksLT_connectionString": {
-			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=sqldb-weslbo.database.windows.net;Initial Catalog=AdventureWorksLT;User ID=azureuser"
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=sqldb-michals.database.windows.net;Initial Catalog=AdventureWorksLT;User ID=azureuser"
 		},
 		"SqlDwh_connectionString": {
 			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=\"@{concat('synapse-', linkedService().suffix,'.sql.azuresynapse.net')}\";Initial Catalog=sqldwh"
