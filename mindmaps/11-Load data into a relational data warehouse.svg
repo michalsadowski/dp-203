@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="538px" preserveAspectRatio="none" style="width:1155px;height:538px;background:#FFFFFF;" version="1.1" viewBox="0 0 1155 538" width="1155px" zoomAndPan="magnify"><defs/><g><rect fill="#091F2C" height="37.6094" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:3.0;" width="123" x="10" y="249.3633"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="103" x="20" y="273.8965">Data warehouse</text><rect fill="#FFB900" height="37.6094" rx="12.5" ry="12.5" style="stroke:#FFB900;stroke-width:3.0;" width="165" x="203" y="30"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="141" x="213" y="54.5332">1) Load staging tables</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="441" y="34.9238">Creating staging tables</text><path d="M368,48.8047 L378,48.8047 C393,48.8047 413,29.1953 428,29.1953 L438,29.1953 " fill="none" style="stroke:#FFB900;stroke-width:3.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="167" x="441" y="54.5332">Using the COPY command</text><path d="M368,48.8047 L378,48.8047 C393,48.8047 413,48.8047 428,48.8047 L438,48.8047 " fill="none" style="stroke:#FFB900;stroke-width:3.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131" x="441" y="74.1426">Using external tables</text><path d="M368,48.8047 L378,48.8047 C393,48.8047 413,68.4141 428,68.4141 L438,68.4141 " fill="none" style="stroke:#FFB900;stroke-width:3.0;"/><path d="M133,268.168 L143,268.168 C158,268.168 178,48.8047 193,48.8047 L203,48.8047 " fill="none" style="stroke:#181818;stroke-width:3.0;"/><rect fill="#F4364C" height="37.6094" rx="12.5" ry="12.5" style="stroke:#F4364C;stroke-width:3.0;" width="187" x="203" y="107.6094"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="213" y="132.1426">2) Load dimension tables</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="294" x="463" y="112.5332">Using a CREATE TABLE AS (CTAS) statement</text><path d="M390,126.4141 L400,126.4141 C415,126.4141 435,106.8047 450,106.8047 L460,106.8047 " fill="none" style="stroke:#F4364C;stroke-width:3.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="680" x="463" y="132.1426">You can't use IDENTITY for the surrogate key when using a CTAS statement. Use ROW_NUMBER() instead.</text><path d="M390,126.4141 L400,126.4141 C415,126.4141 435,126.4141 450,126.4141 L460,126.4141 " fill="none" style="stroke:#F4364C;stroke-width:3.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="174" x="463" y="151.752">Using an INSERT statement</text><path d="M390,126.4141 L400,126.4141 C415,126.4141 435,146.0234 450,146.0234 L460,146.0234 " fill="none" style="stroke:#F4364C;stroke-width:3.0;"/><path d="M133,268.168 L143,268.168 C158,268.168 178,126.4141 193,126.4141 L203,126.4141 " fill="none" style="stroke:#181818;stroke-width:3.0;"/><rect fill="#C5B4E3" height="37.6094" rx="12.5" ry="12.5" style="stroke:#C5B4E3;stroke-width:3.0;" width="213" x="203" y="185.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="189" x="213" y="209.752">3) Load time dimension tables</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="444" x="489" y="199.9473">Generate a sequence of time dimension values based on a date grain.</text><path d="M416,204.0234 L426,204.0234 C441,204.0234 461,194.2188 476,194.2188 L486,194.2188 " fill="none" style="stroke:#C5B4E3;stroke-width:3.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="281" x="489" y="219.5566">Scripting this in SQL may be time-consuming</text><path d="M416,204.0234 L426,204.0234 C441,204.0234 461,213.8281 476,213.8281 L486,213.8281 " fill="none" style="stroke:#C5B4E3;stroke-width:3.0;"/><path d="M133,268.168 L143,268.168 C158,268.168 178,204.0234 193,204.0234 L203,204.0234 " fill="none" style="stroke:#181818;stroke-width:3.0;"/><rect fill="#E1D3C7" height="37.6094" rx="12.5" ry="12.5" style="stroke:#E1D3C7;stroke-width:3.0;" width="251" x="203" y="293.0703"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="227" x="213" y="317.6035">4) Load slowly changing dimensions</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="527" y="239.166">Type 0 (data can't be changed)</text><path d="M454,311.875 L464,311.875 C479,311.875 499,233.4375 514,233.4375 L524,233.4375 " fill="none" style="stroke:#E1D3C7;stroke-width:3.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="156" x="527" y="258.7754">Type 1 (in-place update)</text><path d="M454,311.875 L464,311.875 C479,311.875 499,253.0469 514,253.0469 L524,253.0469 " fill="none" style="stroke:#E1D3C7;stroke-width:3.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="270" x="527" y="278.3848">Type 2 (updates are inserted as new rows)</text><path d="M454,311.875 L464,311.875 C479,311.875 499,272.6563 514,272.6563 L524,272.6563 " fill="none" style="stroke:#E1D3C7;stroke-width:3.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="167" x="527" y="297.9941">Type 3 (add new attribute)</text><path d="M454,311.875 L464,311.875 C479,311.875 499,292.2656 514,292.2656 L524,292.2656 " fill="none" style="stroke:#E1D3C7;stroke-width:3.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163" x="527" y="317.6035">Type 4 (add history table)</text><path d="M454,311.875 L464,311.875 C479,311.875 499,311.875 514,311.875 L524,311.875 " fill="none" style="stroke:#E1D3C7;stroke-width:3.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="276" x="527" y="337.2129">Type 5 (add history table and new attribute)</text><path d="M454,311.875 L464,311.875 C479,311.875 499,331.4844 514,331.4844 L524,331.4844 " fill="none" style="stroke:#E1D3C7;stroke-width:3.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="210" x="527" y="356.8223">Type 6 (combine type 1, 2 and 3)</text><path d="M454,311.875 L464,311.875 C479,311.875 499,351.0938 514,351.0938 L524,351.0938 " fill="none" style="stroke:#E1D3C7;stroke-width:3.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="280" x="527" y="376.4316">Combining INSERT and UPDATE statements</text><path d="M454,311.875 L464,311.875 C479,311.875 499,370.7031 514,370.7031 L524,370.7031 " fill="none" style="stroke:#E1D3C7;stroke-width:3.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="167" x="527" y="396.041">Using a MERGE statement</text><path d="M454,311.875 L464,311.875 C479,311.875 499,390.3125 514,390.3125 L524,390.3125 " fill="none" style="stroke:#E1D3C7;stroke-width:3.0;"/><path d="M133,268.168 L143,268.168 C158,268.168 178,311.875 193,311.875 L203,311.875 " fill="none" style="stroke:#181818;stroke-width:3.0;"/><rect fill="#07641D" height="37.6094" rx="12.5" ry="12.5" style="stroke:#07641D;stroke-width:3.0;" width="146" x="203" y="391.1172"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="118" x="213" y="415.6504">5) Load fact tables</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="244" x="422" y="415.6504">Load fact tables after dimension tables</text><path d="M349,409.9219 L359,409.9219 C374,409.9219 394,409.9219 409,409.9219 L419,409.9219 " fill="none" style="stroke:#07641D;stroke-width:3.0;"/><path d="M133,268.168 L143,268.168 C158,268.168 178,409.9219 193,409.9219 L203,409.9219 " fill="none" style="stroke:#181818;stroke-width:3.0;"/><rect fill="#F1F1F1" height="37.6094" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:1.5;" width="231" x="203" y="468.7266"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="207" x="213" y="493.2598">6) Perform post load optimization</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="507" y="483.4551">Rebuild indexes</text><path d="M434,487.5313 L444,487.5313 C459,487.5313 479,477.7266 494,477.7266 L504,477.7266 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="103" x="507" y="503.0645">Update statistics</text><path d="M434,487.5313 L444,487.5313 C459,487.5313 479,497.3359 494,497.3359 L504,497.3359 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><path d="M133,268.168 L143,268.168 C158,268.168 178,487.5313 193,487.5313 L203,487.5313 " fill="none" style="stroke:#181818;stroke-width:3.0;"/><!--MD5=[e37f8a7b92f668b8960b8c0c51f5886c]
+@startmindmap
+<style>
+node {
+    Margin 20
+}
+:depth(0) {
+    BackgroundColor #091f2c
+    FontColor #ffffff
+    LineThickness 3.0
+}
+.topic1 {
+    BackgroundColor #ffb900
+    LineColor #ffb900
+    LineThickness 3.0
+    FontColor #000000
+}
+.topic2 {
+    BackgroundColor #f4364c
+    LineColor #f4364c
+    LineThickness 3.0
+    FontColor #ffffff
+}
+.topic3 {
+    BackgroundColor #c5b4e3
+    LineColor #c5b4e3
+    LineThickness 3.0
+    FontColor #000000
+}
+.topic4 {
+    BackgroundColor #e1d3c7
+    LineColor #e1d3c7
+    LineThickness 3.0
+    FontColor #000000
+}
+.topic5 {
+    BackgroundColor #07641d
+    LineColor #07641d
+    LineThickness 3.0
+    FontColor #ffffff
+}
+</style>
++ Data warehouse
+++ 1) Load staging tables <<topic1>>
++++_ Creating staging tables
++++_ Using the COPY command
++++_ Using external tables
+++ 2) Load dimension tables  <<topic2>>
++++_ Using a CREATE TABLE AS (CTAS) statement
++++_ You can't use IDENTITY for the surrogate key when using a CTAS statement. Use ROW_NUMBER() instead.
++++_ Using an INSERT statement
+++ 3) Load time dimension tables <<topic3>>
++++_ Generate a sequence of time dimension values based on a date grain.
++++_ Scripting this in SQL may be time-consuming
+++ 4) Load slowly changing dimensions <<topic4>>
++++_ Type 0 (data can't be changed)
++++_ Type 1 (in-place update)
++++_ Type 2 (updates are inserted as new rows)
++++_ Type 3 (add new attribute)
++++_ Type 4 (add history table)
++++_ Type 5 (add history table and new attribute)
++++_ Type 6 (combine type 1, 2 and 3)
++++_ Combining INSERT and UPDATE statements
++++_ Using a MERGE statement
+++ 5) Load fact tables  <<topic5>>
++++_ Load fact tables after dimension tables
+++ 6) Perform post load optimization <<topic6>>
++++_ Rebuild indexes
++++_ Update statistics
+@endmindmap
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>
