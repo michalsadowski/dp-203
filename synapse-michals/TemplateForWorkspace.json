@@ -2612,7 +2612,7 @@
 					"name": "dp-203/08-Govern data/22-Purview"
 				},
 				"content": {
-					"query": "CREATE USER [purview-weslbo] FROM EXTERNAL PROVIDER\n\n\nEXEC sp_addrolemember 'db_datareader',  [purview-weslbo]\n\n",
+					"query": "CREATE USER [purview-michals] FROM EXTERNAL PROVIDER\n\n\nEXEC sp_addrolemember 'db_datareader',  [purview-michals]\n\n",
 					"metadata": {
 						"language": "sql"
 					},
@@ -2681,7 +2681,7 @@
 					"name": "dp-203/06-HTAP/14-Lab-Synapse Link CosmosDB"
 				},
 				"content": {
-					"query": "IF (NOT EXISTS(SELECT * FROM sys.credentials WHERE name = 'cosmosdb'))\n    \n    CREATE CREDENTIAL [cosmosdb]\n    WITH IDENTITY = 'SHARED ACCESS SIGNATURE', SECRET = '<removed>'\nGO\n\nSELECT TOP 100 *\nFROM OPENROWSET(​PROVIDER = 'CosmosDB',\n                CONNECTION = 'Account=cosmos-weslbo;Database=AdventureWorks',\n                OBJECT = 'sales',\n                SERVER_CREDENTIAL = 'cosmosdb'\n) AS [sales]\n\nSELECT *\nFROM OPENROWSET(​PROVIDER = 'CosmosDB',\n                CONNECTION = 'Account=cosmos-weslbo;Database=AdventureWorks',\n                OBJECT = 'sales',\n                SERVER_CREDENTIAL = 'cosmosdb'\n)\nWITH (\n    OrderID VARCHAR(10) '$.id',\n    OrderDate VARCHAR(10) '$.orderdate',\n    CustomerID INTEGER '$.customerid',\n    CustomerName VARCHAR(40) '$.customerdetails.customername',\n    CustomerEmail VARCHAR(30) '$.customerdetails.customeremail',\n    Product VARCHAR(30) '$.product',\n    Quantity INTEGER '$.quantity',\n    Price FLOAT '$.price'\n)\nAS sales\nORDER BY OrderID;",
+					"query": "IF (NOT EXISTS(SELECT * FROM sys.credentials WHERE name = 'cosmosdb'))\n    \n    CREATE CREDENTIAL [cosmosdb]\n    WITH IDENTITY = 'SHARED ACCESS SIGNATURE', SECRET = '<removed>'\nGO\n\nSELECT TOP 100 *\nFROM OPENROWSET(​PROVIDER = 'CosmosDB',\n                CONNECTION = 'Account=cosmos-michals;Database=AdventureWorks',\n                OBJECT = 'sales',\n                SERVER_CREDENTIAL = 'cosmosdb'\n) AS [sales]\n\nSELECT *\nFROM OPENROWSET(​PROVIDER = 'CosmosDB',\n                CONNECTION = 'Account=cosmos-michals;Database=AdventureWorks',\n                OBJECT = 'sales',\n                SERVER_CREDENTIAL = 'cosmosdb'\n)\nWITH (\n    OrderID VARCHAR(10) '$.id',\n    OrderDate VARCHAR(10) '$.orderdate',\n    CustomerID INTEGER '$.customerid',\n    CustomerName VARCHAR(40) '$.customerdetails.customername',\n    CustomerEmail VARCHAR(30) '$.customerdetails.customeremail',\n    Product VARCHAR(30) '$.product',\n    Quantity INTEGER '$.quantity',\n    Price FLOAT '$.price'\n)\nAS sales\nORDER BY OrderID;",
 					"metadata": {
 						"language": "sql"
 					},
@@ -2704,7 +2704,7 @@
 					"name": "dp-203/08-Govern data/22-Purview"
 				},
 				"content": {
-					"query": "CREATE LOGIN [purview-weslbo] FROM EXTERNAL PROVIDER\n\nUSE default\n\nCREATE USER [purview-weslbo] FROM LOGIN [purview-weslbo]\nALTER ROLE db_datareader ADD MEMBER [purview-weslbo]\n\nUSE Sales\n\nCREATE USER [purview-weslbo] FROM LOGIN [purview-weslbo]\nALTER ROLE db_datareader ADD MEMBER [purview-weslbo]\n",
+					"query": "CREATE LOGIN [purview-michals] FROM EXTERNAL PROVIDER\n\nUSE default\n\nCREATE USER [purview-michals] FROM LOGIN [purview-michals]\nALTER ROLE db_datareader ADD MEMBER [purview-michals]\n\nUSE Sales\n\nCREATE USER [purview-michals] FROM LOGIN [purview-michals]\nALTER ROLE db_datareader ADD MEMBER [purview-michals]\n",
 					"metadata": {
 						"language": "sql"
 					},
@@ -6695,7 +6695,7 @@
 						"spark.dynamicAllocation.enabled": "false",
 						"spark.dynamicAllocation.minExecutors": "2",
 						"spark.dynamicAllocation.maxExecutors": "2",
-						"spark.autotune.trackingId": "78916e14-e553-4de9-a3fd-1c2161e668bf"
+						"spark.autotune.trackingId": "366dabd5-6ea7-452b-bb1a-ed54ed8fa298"
 					}
 				},
 				"metadata": {
@@ -6709,10 +6709,10 @@
 						"name": "python"
 					},
 					"a365ComputeOptions": {
-						"id": "/subscriptions/784f1210-8faf-4cf4-b9aa-e50fa084adce/resourceGroups/rg-dp-203/providers/Microsoft.Synapse/workspaces/synapse-weslbo/bigDataPools/sparkpool",
+						"id": "/subscriptions/29c900e2-4acd-4d1d-bd39-3a1e463eafe5/resourceGroups/rg-dp-203/providers/Microsoft.Synapse/workspaces/synapse-michals/bigDataPools/sparkpool",
 						"name": "sparkpool",
 						"type": "Spark",
-						"endpoint": "https://synapse-weslbo.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/sparkpool",
+						"endpoint": "https://synapse-michals.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/sparkpool",
 						"auth": {
 							"type": "AAD",
 							"authResource": "https://dev.azuresynapse.net"
@@ -6720,7 +6720,8 @@
 						"sparkVersion": "3.2",
 						"nodeCount": 3,
 						"cores": 4,
-						"memory": 28
+						"memory": 28,
+						"automaticScaleJobs": false
 					},
 					"sessionKeepAliveTimeout": 30
 				},
@@ -6806,7 +6807,7 @@
 							"display(df.limit(10))"
 						],
 						"outputs": [],
-						"execution_count": 2
+						"execution_count": null
 					},
 					{
 						"cell_type": "markdown",
@@ -6847,7 +6848,7 @@
 							"display(df.limit(10))"
 						],
 						"outputs": [],
-						"execution_count": 3
+						"execution_count": null
 					},
 					{
 						"cell_type": "markdown",
@@ -6883,7 +6884,7 @@
 							"display(df_counts)"
 						],
 						"outputs": [],
-						"execution_count": 4
+						"execution_count": null
 					},
 					{
 						"cell_type": "markdown",
