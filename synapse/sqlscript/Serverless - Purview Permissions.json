@@ -5,7 +5,7 @@
 			"name": "dp-203/08-Govern data/22-Purview"
 		},
 		"content": {
-			"query": "CREATE LOGIN [purview-weslbo] FROM EXTERNAL PROVIDER\n\nUSE default\n\nCREATE USER [purview-weslbo] FROM LOGIN [purview-weslbo]\nALTER ROLE db_datareader ADD MEMBER [purview-weslbo]\n\nUSE Sales\n\nCREATE USER [purview-weslbo] FROM LOGIN [purview-weslbo]\nALTER ROLE db_datareader ADD MEMBER [purview-weslbo]\n",
+			"query": "CREATE LOGIN [purview-michals] FROM EXTERNAL PROVIDER\n\nUSE default\n\nCREATE USER [purview-michals] FROM LOGIN [purview-michals]\nALTER ROLE db_datareader ADD MEMBER [purview-michals]\n\nUSE Sales\n\nCREATE USER [purview-michals] FROM LOGIN [purview-michals]\nALTER ROLE db_datareader ADD MEMBER [purview-michals]\n",
 			"metadata": {
 				"language": "sql"
 			},
