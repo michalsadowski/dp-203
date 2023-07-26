@@ -5,6 +5,9 @@
 		"workspaceName": {
 			"value": "synapse-michals"
 		},
+		"CosmosDB_connectionString": {
+			"value": ""
+		},
 		"SqlAdventureWorksLT_connectionString": {
 			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=sqldb-michals.database.windows.net;Initial Catalog=AdventureWorksLT;User ID=azureuser"
 		},
