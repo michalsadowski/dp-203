@@ -29,7 +29,8 @@
 		},
 		"SqlAdventureWorksLT_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'SqlAdventureWorksLT'"
+			"metadata": "Secure string for 'connectionString' of 'SqlAdventureWorksLT'",
+			"defaultValue": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=azuresqldb-michals.database.windows.net;Initial Catalog=AdventureWorksLT"
 		},
 		"SqlDwh_connectionString": {
 			"type": "secureString",

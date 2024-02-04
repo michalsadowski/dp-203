@@ -21,7 +21,7 @@
 			"value": ""
 		},
 		"SqlAdventureWorksLT_connectionString": {
-			"value": ""
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=azuresqldb-michals.database.windows.net;Initial Catalog=AdventureWorksLT"
 		},
 		"SqlDwh_connectionString": {
 			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=\"@{concat('synapse-', linkedService().suffix,'.sql.azuresynapse.net')}\";Initial Catalog=sqldwh"
