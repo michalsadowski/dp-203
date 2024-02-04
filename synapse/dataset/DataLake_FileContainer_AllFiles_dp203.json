@@ -6,7 +6,7 @@
 			"type": "LinkedServiceReference",
 			"parameters": {
 				"suffix": {
-					"value": "@replace(pipeline().DataFactory, 'synapse-', '')",
+					"value": "michals",
 					"type": "Expression"
 				}
 			}
