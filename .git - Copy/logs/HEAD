@@ -1,0 +1,5 @@
+0000000000000000000000000000000000000000 607712ef30cb98f3ed4aeb56412c6db35bfb490a michalsadowski <michal.sadowski@hotmail.com> 1690237111 +0200	commit (initial): Initial commit
+607712ef30cb98f3ed4aeb56412c6db35bfb490a 86b8e10303bdfa6fe85bca7ed7990a5d94889801 michalsadowski <michal.sadowski@hotmail.com> 1690237767 +0200	pull --ff --recurse-submodules --progress origin: Fast-forward
+86b8e10303bdfa6fe85bca7ed7990a5d94889801 51561ea873b07a1425d83f77ebdbe6f02ecf093a michalsadowski <michal.sadowski@hotmail.com> 1690238151 +0200	pull --ff --recurse-submodules --progress origin: Fast-forward
+51561ea873b07a1425d83f77ebdbe6f02ecf093a 3e61a5df01099b7c48e40f2e29077f1681a4e6a0 michalsadowski <michal.sadowski@hotmail.com> 1690238209 +0200	commit: test
+3e61a5df01099b7c48e40f2e29077f1681a4e6a0 26cbb5457dc2b60875ac1afbbb723b05e18d3a4c michalsadowski <michal.sadowski@hotmail.com> 1707061482 +0100	pull --ff --recurse-submodules --progress origin: Fast-forward
