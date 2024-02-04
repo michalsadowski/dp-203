@@ -1,9 +1,9 @@
 {
-	"name": "synapse-weslbo-WorkspaceDefaultStorage",
+	"name": "synapse-michals-WorkspaceDefaultStorage",
 	"type": "Microsoft.Synapse/workspaces/linkedservices",
 	"properties": {
 		"typeProperties": {
-			"url": "https://datalakeweslbo.dfs.core.windows.net"
+			"url": "https://datalakemichals.dfs.core.windows.net"
 		},
 		"type": "AzureBlobFS",
 		"connectVia": {

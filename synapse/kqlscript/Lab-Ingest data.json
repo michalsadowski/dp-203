@@ -11,7 +11,7 @@
 				"language": "kql"
 			},
 			"currentConnection": {
-				"poolName": "adxweslbo",
+				"poolName": "adxmichals",
 				"databaseName": "sales-data"
 			}
 		},

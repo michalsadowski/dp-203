@@ -34,10 +34,10 @@
 				"name": "python"
 			},
 			"a365ComputeOptions": {
-				"id": "/subscriptions/784f1210-8faf-4cf4-b9aa-e50fa084adce/resourceGroups/rg-dp-203/providers/Microsoft.Synapse/workspaces/synapse-weslbo/bigDataPools/sparkpool",
+				"id": "/subscriptions/784f1210-8faf-4cf4-b9aa-e50fa084adce/resourceGroups/rg-dp-203/providers/Microsoft.Synapse/workspaces/synapse-michals/bigDataPools/sparkpool",
 				"name": "sparkpool",
 				"type": "Spark",
-				"endpoint": "https://synapse-weslbo.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/sparkpool",
+				"endpoint": "https://synapse-michals.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/sparkpool",
 				"auth": {
 					"type": "AAD",
 					"authResource": "https://dev.azuresynapse.net"
@@ -82,7 +82,7 @@
 				},
 				"source": [
 					"%%pyspark\r\n",
-					"df = spark.read.load('abfss://files@datalakeweslbo.dfs.core.windows.net/labs-dp-203/03/data/2019.csv', format='csv', header=True\r\n",
+					"df = spark.read.load('abfss://files@datalakemichals.dfs.core.windows.net/labs-dp-203/03/data/2019.csv', format='csv', header=True\r\n",
 					")\r\n",
 					"display(df.limit(10))"
 				],
@@ -122,7 +122,7 @@
 				},
 				"source": [
 					"%%pyspark\r\n",
-					"df = spark.read.load('abfss://files@datalakeweslbo.dfs.core.windows.net/labs-dp-203/03/data/*.csv', format='csv')\r\n",
+					"df = spark.read.load('abfss://files@datalakemichals.dfs.core.windows.net/labs-dp-203/03/data/*.csv', format='csv')\r\n",
 					"display(df.limit(10))"
 				],
 				"execution_count": 4
@@ -174,7 +174,7 @@
 					"    StructField(\"Tax\", FloatType())\r\n",
 					"    ])\r\n",
 					"\r\n",
-					"df = spark.read.load('abfss://files@datalakeweslbo.dfs.core.windows.net/labs-dp-203/03/data/*.csv', format='csv', schema=orderSchema, header=True)\r\n",
+					"df = spark.read.load('abfss://files@datalakemichals.dfs.core.windows.net/labs-dp-203/03/data/*.csv', format='csv', schema=orderSchema, header=True)\r\n",
 					"display(df.limit(100))"
 				],
 				"execution_count": 6
@@ -358,7 +358,7 @@
 					}
 				},
 				"source": [
-					"yearlySales.write.partitionBy(\"Year\").parquet(\"abfss://files@datalakeweslbo.dfs.core.windows.net/labs-dp-203/03/data/yearlysales\")"
+					"yearlySales.write.partitionBy(\"Year\").parquet(\"abfss://files@datalakemichals.dfs.core.windows.net/labs-dp-203/03/data/yearlysales\")"
 				],
 				"execution_count": 16
 			},

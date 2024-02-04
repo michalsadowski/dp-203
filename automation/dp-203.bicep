@@ -72,7 +72,7 @@ resource workspace 'Microsoft.Synapse/workspaces@2019-06-01-preview' = {
     sqlAdministratorLoginPassword: sqlPassword
     managedResourceGroupName: 'm${resourceGroup().name}-synapse'
     workspaceRepositoryConfiguration: {
-      accountName: 'weslbo'
+      accountName: 'michals'
       collaborationBranch: 'main'
       repositoryName: 'dp-203'
       rootFolder: '/synapse/'

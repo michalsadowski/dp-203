@@ -1,5 +1,5 @@
 # Set ssome variabls
-uniqueSuffix=weslbo
+uniqueSuffix=michals
 sqlUser=azureuser
 read -p "Password for SQL Admin: " sqlPassword
 
@@ -7,7 +7,7 @@ read -p "Password for SQL Admin: " sqlPassword
 rm -r dp-203 -f
 mkdir dp-203
 
-wget https://raw.githubusercontent.com/weslbo/dp-203/main/automation/setupsqldwh.sql -O ./dp-203/setupsqldwh.sql
+wget https://raw.githubusercontent.com/michals/dp-203/main/automation/setupsqldwh.sql -O ./dp-203/setupsqldwh.sql
 sqlcmd -S "synapse-$uniqueSuffix.sql.azuresynapse.net" -U $sqlUser -P $sqlPassword -d sqldwh -I -i ./dp-203/setupsqldwh.sql
 
 # This code declares an array of strings called "files" which contains 10 different file names.

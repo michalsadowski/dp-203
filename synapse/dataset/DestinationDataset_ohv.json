@@ -2,7 +2,7 @@
 	"name": "DestinationDataset_ohv",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "synapse-weslbo-WorkspaceDefaultStorage",
+			"referenceName": "synapse-michals-WorkspaceDefaultStorage",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],

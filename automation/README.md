@@ -24,11 +24,11 @@ To deploy this environment:
 
     ```azurecli
     rm -r dp-203 -f
-    git clone https://github.com/weslbo/dp-203.git
+    git clone https://github.com/michals/dp-203.git
     cd dp-203
     userobjectid=$(az ad signed-in-user show --query id --output tsv)
     powerBIAdminEmailAddress=$(az ad signed-in-user show --query mail --output tsv)
-    uniqueSuffix=weslbo
+    uniqueSuffix=michals
     read -p "Password for SQL Admin: " password
     ```
 

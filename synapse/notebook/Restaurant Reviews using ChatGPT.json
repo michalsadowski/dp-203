@@ -34,10 +34,10 @@
 				"name": "python"
 			},
 			"a365ComputeOptions": {
-				"id": "/subscriptions/784f1210-8faf-4cf4-b9aa-e50fa084adce/resourceGroups/rg-dp-203/providers/Microsoft.Synapse/workspaces/synapse-weslbo/bigDataPools/sparkpool",
+				"id": "/subscriptions/784f1210-8faf-4cf4-b9aa-e50fa084adce/resourceGroups/rg-dp-203/providers/Microsoft.Synapse/workspaces/synapse-michals/bigDataPools/sparkpool",
 				"name": "sparkpool",
 				"type": "Spark",
-				"endpoint": "https://synapse-weslbo.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/sparkpool",
+				"endpoint": "https://synapse-michals.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/sparkpool",
 				"auth": {
 					"type": "AAD",
 					"authResource": "https://dev.azuresynapse.net"
@@ -62,7 +62,7 @@
 				},
 				"source": [
 					"# Sentiment review (fake) restaurant reviews using Synapse and ChatGPT\r\n",
-					"![Picture](https://github.com/weslbo/dp-203/raw/main/images/e525e0a5-ff67-4d6d-b32a-f35f4e716919.jpg)\r\n",
+					"![Picture](https://github.com/michals/dp-203/raw/main/images/e525e0a5-ff67-4d6d-b32a-f35f4e716919.jpg)\r\n",
 					"This notebook is based on an article and video from Thomas Costers and Stijn Wynants\r\n",
 					"\r\n",
 					"- https://techcommunity.microsoft.com/t5/azure-synapse-analytics-blog/using-openai-gpt-in-synapse-analytics/ba-p/3751815\r\n",
@@ -164,7 +164,7 @@
 					"from pyspark.sql.functions import *\r\n",
 					"from synapse.ml.cognitive import OpenAICompletion\r\n",
 					"\r\n",
-					"key = find_secret(\"openaikey\", \"keyvault-weslbo\")  # replace this with your secret and keyvault\r\n",
+					"key = find_secret(\"openaikey\", \"keyvault-michals\")  # replace this with your secret and keyvault\r\n",
 					"nrOfReviews = 10\r\n",
 					"\r\n",
 					"completion = (\r\n",
