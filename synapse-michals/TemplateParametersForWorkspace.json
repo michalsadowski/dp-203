@@ -5,8 +5,50 @@
 		"workspaceName": {
 			"value": "synapse-michals"
 		},
+		"AdventureWorksDBLinkedService_connectionString": {
+			"value": ""
+		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"CosmosDB_connectionString": {
+			"value": ""
+		},
+		"DP203AzureDataLakeStorage_accountKey": {
+			"value": ""
+		},
+		"SalesCosmos_connectionString": {
+			"value": ""
+		},
+		"SqlAdventureWorksLT_connectionString": {
+			"value": ""
+		},
+		"SqlDwh_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=\"@{concat('synapse-', linkedService().suffix,'.sql.azuresynapse.net')}\";Initial Catalog=sqldwh"
+		},
 		"synapse-michals-WorkspaceDefaultSqlServer_connectionString": {
 			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:synapse-michals.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"DP203AzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://datalakemichals.dfs.core.windows.net/"
+		},
+		"DataLake_properties_typeProperties_url": {
+			"value": "@{concat('https://datalake', linkedService().suffix, '.dfs.core.windows.net')}"
+		},
+		"GitHubDP203AzureDataEngineer_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/MicrosoftLearning/DP-203-Azure-Data-Engineer/"
+		},
+		"GitHubDP500AzureDataAnalyst_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/MicrosoftLearning/DP-500-Azure-Data-Analyst/"
+		},
+		"KeyVault_properties_typeProperties_baseUrl": {
+			"value": "@{concat('https://keyvault-', linkedService().suffix, '.vault.azure.net/')}"
+		},
+		"Products_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/MicrosoftLearning/dp-203-azure-data-engineer/master/Allfiles/labs/01/adventureworks/products.csv"
+		},
+		"bing-covid-19-data_sasUri": {
+			"value": ""
 		},
 		"synapse-michals-WorkspaceDefaultStorage_properties_typeProperties_url": {
 			"value": "https://datalakemichals.dfs.core.windows.net"
