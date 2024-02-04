@@ -1,7 +1,0 @@
-0000000000000000000000000000000000000000 607712ef30cb98f3ed4aeb56412c6db35bfb490a michalsadowski <michal.sadowski@hotmail.com> 1690237174 +0200	update by push
-607712ef30cb98f3ed4aeb56412c6db35bfb490a 86b8e10303bdfa6fe85bca7ed7990a5d94889801 michalsadowski <michal.sadowski@hotmail.com> 1690237662 +0200	fetch --progress --prune --recurse-submodules=on-demand origin: fast-forward
-86b8e10303bdfa6fe85bca7ed7990a5d94889801 51561ea873b07a1425d83f77ebdbe6f02ecf093a michalsadowski <michal.sadowski@hotmail.com> 1690238144 +0200	fetch --progress --prune --recurse-submodules=on-demand origin: fast-forward
-51561ea873b07a1425d83f77ebdbe6f02ecf093a 3e61a5df01099b7c48e40f2e29077f1681a4e6a0 michalsadowski <michal.sadowski@hotmail.com> 1690238215 +0200	update by push
-3e61a5df01099b7c48e40f2e29077f1681a4e6a0 15d04048c35fff0a743ad6fa9e955ee07cb4e85d michalsadowski <michal.sadowski@hotmail.com> 1690240288 +0200	fetch --progress --prune --recurse-submodules=on-demand origin: fast-forward
-15d04048c35fff0a743ad6fa9e955ee07cb4e85d c9f0ef67b92f23117b5ae8b03dc975dadc69b25a michalsadowski <michal.sadowski@hotmail.com> 1692262270 +0200	fetch --progress --prune --recurse-submodules=on-demand origin: fast-forward
-c9f0ef67b92f23117b5ae8b03dc975dadc69b25a 26cbb5457dc2b60875ac1afbbb723b05e18d3a4c michalsadowski <michal.sadowski@hotmail.com> 1707061479 +0100	fetch --progress --prune --recurse-submodules=on-demand origin: fast-forward

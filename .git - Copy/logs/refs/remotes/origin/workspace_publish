@@ -1,3 +1,0 @@
-0000000000000000000000000000000000000000 dda81fe3bb831b1e1775f2d4b7ece56ceaabf1a5 michalsadowski <michal.sadowski@hotmail.com> 1690237662 +0200	fetch --progress --prune --recurse-submodules=on-demand origin: storing head
-dda81fe3bb831b1e1775f2d4b7ece56ceaabf1a5 d1f6df68aca4f1da5043736823d951884ea18a67 michalsadowski <michal.sadowski@hotmail.com> 1690238144 +0200	fetch --progress --prune --recurse-submodules=on-demand origin: fast-forward
-d1f6df68aca4f1da5043736823d951884ea18a67 6c61dfa7908f0e5b6d11c700f95cc262eb35b185 michalsadowski <michal.sadowski@hotmail.com> 1707061479 +0100	fetch --progress --prune --recurse-submodules=on-demand origin: fast-forward
