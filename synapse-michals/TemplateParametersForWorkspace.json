@@ -6,7 +6,7 @@
 			"value": "synapse-michals"
 		},
 		"AdventureWorksDBLinkedService_connectionString": {
-			"value": ""
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=azuresqldb-michals.database.windows.net;Initial Catalog=AdventureWorksLT"
 		},
 		"AzureDatabricks1_accessToken": {
 			"value": ""

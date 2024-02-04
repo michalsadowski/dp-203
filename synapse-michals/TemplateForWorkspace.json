@@ -9,7 +9,8 @@
 		},
 		"AdventureWorksDBLinkedService_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AdventureWorksDBLinkedService'"
+			"metadata": "Secure string for 'connectionString' of 'AdventureWorksDBLinkedService'",
+			"defaultValue": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=azuresqldb-michals.database.windows.net;Initial Catalog=AdventureWorksLT"
 		},
 		"AzureDatabricks1_accessToken": {
 			"type": "secureString",
