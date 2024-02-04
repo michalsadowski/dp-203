@@ -1445,7 +1445,7 @@
 					"type": "LinkedServiceReference",
 					"parameters": {
 						"suffix": {
-							"value": "@replace(pipeline().DataFactory, 'synapse-', '')",
+							"value": "michals",
 							"type": "Expression"
 						}
 					}
@@ -2157,19 +2157,12 @@
 				"annotations": [],
 				"type": "AzureDatabricks",
 				"typeProperties": {
-					"domain": "https://adb-3270789565584912.12.azuredatabricks.net",
+					"domain": "https://adb-8776580205160569.9.azuredatabricks.net",
 					"accessToken": {
 						"type": "SecureString",
 						"value": "[parameters('AzureDatabricks1_accessToken')]"
 					},
-					"newClusterNodeType": "Standard_DS3_v2",
-					"newClusterNumOfWorker": "2",
-					"newClusterSparkEnvVars": {
-						"PYSPARK_PYTHON": "/databricks/python3/bin/python3"
-					},
-					"newClusterVersion": "10.4.x-scala2.12",
-					"clusterOption": "Fixed",
-					"newClusterInitScripts": []
+					"existingClusterId": "0204-162837-hie0gdgk"
 				},
 				"connectVia": {
 					"referenceName": "AutoResolveIntegrationRuntime",
@@ -2230,7 +2223,8 @@
 				"description": "The Azure Data Lake that is linked to this workspace",
 				"parameters": {
 					"suffix": {
-						"type": "string"
+						"type": "string",
+						"defaultValue": "michals"
 					}
 				},
 				"annotations": [],
@@ -2376,7 +2370,8 @@
 			"properties": {
 				"parameters": {
 					"suffix": {
-						"type": "string"
+						"type": "string",
+						"defaultValue": "michals"
 					}
 				},
 				"annotations": [],
