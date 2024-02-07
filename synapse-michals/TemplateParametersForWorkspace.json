@@ -5,6 +5,9 @@
 		"workspaceName": {
 			"value": "synapse-michals"
 		},
+		"AWCosmosDB_connectionString": {
+			"value": ""
+		},
 		"AdventureWorksDBLinkedService_connectionString": {
 			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=azuresqldb-michals.database.windows.net;Initial Catalog=AdventureWorksLT"
 		},
@@ -28,6 +31,9 @@
 		},
 		"synapse-michals-WorkspaceDefaultSqlServer_connectionString": {
 			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:synapse-michals.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"SQLAWLT_connectionString": {
+			"value": ""
 		},
 		"DP203AzureDataLakeStorage_properties_typeProperties_url": {
 			"value": "https://datalakemichals.dfs.core.windows.net/"
